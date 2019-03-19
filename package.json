@@ -1,0 +1,48 @@
+{
+  "name": "poster",
+  "version": "1.0.0",
+  "description": "The ultimate hackable CMS for publishers",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "NODE_ENV=development webpack-dev-server --mode development --progress --hide-modules --open --hot --history-api-fallback --config ./scripts/webpack.base.js",
+    "start": "node server",
+    "build": "NODE_ENV=production webpack --mode production",
+    "lint": "node_modules/.bin/eslint . --ext .vue,.js,.css,.scss,.html",
+    "lint:fix": "npm run lint -- --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gh:postercms/poster.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/preset-react": "^7.0.0",
+    "autoprefixer": "^9.5.0",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.1",
+    "eslint": "^5.15.3",
+    "eslint-config-standard": "^12.0.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "postcss": "^7.0.14",
+    "postcss-loader": "^3.0.0",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "style-loader": "^0.23.1",
+    "tailwindcss": "^0.7.4",
+    "uglifyjs-webpack-plugin": "^2.1.2",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1",
+    "webpack-merge": "^4.2.1"
+  },
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
