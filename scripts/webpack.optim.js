@@ -10,10 +10,8 @@ module.exports = {
             keep_fnames: true,
           },
         },
-      })
+      }),
     ],
   },
-  plugins: [
-    new OptimizeCssAssetsPlugin(),
-  ],
+  plugins: [new OptimizeCssAssetsPlugin()],
 };

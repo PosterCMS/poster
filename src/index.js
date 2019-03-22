@@ -1,10 +1,13 @@
 import React from 'react';
-import {render} from 'react-dom';
+import { render } from 'react-dom';
+import './styles.css';
 
 const App = () => {
   return (
-    <h1>Hello Posters!</h1>
+    <div className="flex flex-wrap">
+      <div className="w-full ml-auto bg-grey h-12" />
+    </div>
   );
 };
 
-render(<App/>, document.getElementById('app'));
+render(<App />, document.getElementById('app'));
